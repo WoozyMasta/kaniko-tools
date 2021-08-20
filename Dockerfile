@@ -32,7 +32,7 @@ LABEL maintainer="woozymasta@gmail.com"
 # hadolint ignore=DL3018
 RUN set -eux && \
     apk add --update --no-cache \
-    bash git tar xz gzip bzip2 curl coreutils openssl ca-certificates && \
+    bash git grep tar xz gzip bzip2 curl coreutils openssl ca-certificates && \
     curl -sLo /usr/bin/jq \
       "https://github.com/stedolan/jq/releases/download/jq-$JQ_RELEASE/jq-linux64" && \
     curl -sLo /usr/bin/yq \
